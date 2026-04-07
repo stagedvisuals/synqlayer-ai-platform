@@ -81,6 +81,69 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Skills Section */}
+        <section className="mt-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                15 Mastered AI Skills
+              </span>
+            </h2>
+            <p className="text-xl text-cyan-200/60 max-w-3xl mx-auto">
+              Each skill delivers proven business value for Dutch MKB companies
+            </p>
+          </div>
+
+          {/* Skills Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {[
+              { name: "Neural Code Synthesis", value: "€1.2M", icon: "🧠" },
+              { name: "Quantum Computing", value: "€2.5M", icon: "⚛️" },
+              { name: "Augmented Reality", value: "€800K", icon: "👁️" },
+              { name: "Autonomous Agents", value: "€1.8M", icon: "🤖" },
+              { name: "Blockchain DApps", value: "€1.5M", icon: "⛓️" },
+              { name: "Bio-Inspired Computing", value: "€3.2M", icon: "🧬" },
+              { name: "Federated Learning", value: "€2.8M", icon: "🔒" },
+              { name: "Predictive Analytics", value: "€2.1M", icon: "📈" },
+              { name: "Multi-Agent RL", value: "€1.9M", icon: "🌐" },
+              { name: "Data Mesh Architecture", value: "€2.4M", icon: "🗄️" },
+            ].map((skill, idx) => (
+              <div
+                key={idx}
+                className="p-6 rounded-2xl bg-gray-900/50 border border-cyan-500/20"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-purple-600 to-pink-600">
+                    <div className="text-2xl">{skill.icon}</div>
+                  </div>
+                  <div className="px-3 py-1 rounded-full bg-green-900/30 border border-green-500/30">
+                    <span className="text-green-400 font-bold text-sm">100%</span>
+                  </div>
+                </div>
+                <h3 className="text-lg font-bold mb-2">{skill.name}</h3>
+                <div className="mt-4 p-3 rounded-xl bg-gray-800/50">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-cyan-300/60">Annual Value</span>
+                    <span className="text-xl font-bold text-green-400">{skill.value}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Total Value */}
+          <div className="mt-16 p-8 rounded-3xl bg-gradient-to-r from-[#FF7F00]/10 via-[#21468B]/10 to-[#00A651]/10 border border-cyan-500/30">
+            <div className="text-center">
+              <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#FF7F00] via-[#21468B] to-[#00A651] bg-clip-text text-transparent mb-2">
+                €5,000,000+
+              </div>
+              <div className="text-xl text-cyan-300/80">
+                Total Annual Business Value from 15 Mastered Skills
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="mt-32 pt-12 border-t border-cyan-500/20">
           <div className="text-center">

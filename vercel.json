@@ -4,5 +4,38 @@
   "installCommand": "cd frontend && npm install",
   "outputDirectory": "frontend/.next",
   "framework": "nextjs",
-  "regions": ["fra1"]
+  "regions": ["fra1"],
+  "rewrites": [
+    {
+      "source": "/api/bio/:path*",
+      "destination": "https://bio-inspired-service.vercel.app/api/:path*"
+    },
+    {
+      "source": "/api/federated/:path*",
+      "destination": "https://federated-learning-service.vercel.app/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
 }

@@ -9,6 +9,7 @@
     "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",
     "start": "cd frontend && npm run start",
+    "lint": "cd frontend && npm run lint",
     "deploy": "vercel --prod"
   },
   "engines": {
