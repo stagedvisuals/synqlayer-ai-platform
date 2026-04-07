@@ -1,0 +1,14 @@
+# Ignore everything except frontend
+*
+
+# Allow frontend directory
+!frontend/
+frontend/.next
+frontend/node_modules
+
+# Allow config files
+!vercel.json
+!.vercelignore
+!.gitignore
+!package.json
+!README.md
