@@ -13,7 +13,7 @@ export default function Dashboard() {
                 <div className="text-2xl font-bold bg-gradient-to-r from-[#FF7F00] to-[#21468B] bg-clip-text text-transparent">
                   SynqLayer AI Dashboard
                 </div>
-                <div className="text-xs text-cyan-300/60">5 Kernskills • Live Monitoring</div>
+                <div className="text-xs text-cyan-300/60">5 Kernskills • Stand-alone • Live</div>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -37,9 +37,9 @@ export default function Dashboard() {
             </span>
           </h1>
           <p className="text-xl text-cyan-200/80 max-w-3xl">
-            Live monitoring en implementatie van de 5 geavanceerde AI vaardigheden voor Nederlands MKB.
+            Interactieve interface voor de 5 geavanceerde AI vaardigheden. Stand-alone frontend zonder database.
             <span className="block mt-2 text-sm text-cyan-300/60">
-              🦀 Sovereign Architect Certified • Productie Ready • AVG/GDPR Compliant
+              🦀 Sovereign Architect Certified • Node.js 24.x • Vercel Ready • 100% Nederlands
             </span>
           </p>
         </div>
@@ -196,32 +196,32 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Supabase Connectie */}
+          {/* Stand-alone Feature */}
           <div className="bg-gray-900/50 border border-cyan-500/30 rounded-2xl p-6 backdrop-blur-sm">
             <div className="flex items-center justify-between mb-4">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-600 to-cyan-800 flex items-center justify-center">
                 <div className="text-xl">⚡</div>
               </div>
               <div className="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-sm font-semibold">
-                Live Connectie
+                Stand-alone
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-cyan-300 mb-3">Supabase Backend</h3>
+            <h3 className="text-2xl font-bold text-cyan-300 mb-3">Geen Database Nodig</h3>
             <p className="text-cyan-200/80 mb-4">
-              Realtime database en authenticatie voor de SynqLayer AI Platform. Omgevingsvariabelen geconfigureerd in Vercel.
+              Volledig client-side frontend. Geen Supabase, geen backend, geen database dependencies. Direct live op Vercel.
             </p>
             <div className="space-y-2">
               <div className="flex justify-between text-sm">
-                <span className="text-cyan-300/70">Status:</span>
-                <span className="text-green-400 font-semibold">✅ Verbonden</span>
+                <span className="text-cyan-300/70">Database Dependencies:</span>
+                <span className="text-green-400 font-semibold">0</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-cyan-300/70">Omgevingsvariabelen:</span>
-                <span className="text-blue-400 font-semibold">Vercel geconfigureerd</span>
+                <span className="text-cyan-300/70">Deployment Time:</span>
+                <span className="text-blue-400 font-semibold">2 minuten</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-cyan-300/70">Realtime:</span>
-                <span className="text-orange-400 font-semibold">WebSockets actief</span>
+                <span className="text-cyan-300/70">Maintenance:</span>
+                <span className="text-orange-400 font-semibold">Zero</span>
               </div>
             </div>
           </div>
@@ -253,10 +253,10 @@ export default function Dashboard() {
         <footer className="pt-12 border-t border-cyan-500/20">
           <div className="text-center">
             <p className="text-xl text-cyan-300/80 mb-4">
-              5 AI Kernskills • 100% Beheersing • Productie Ready
+              5 AI Kernskills • 100% Beheersing • Stand-alone Frontend • Nederlands MKB Focus
             </p>
             <p className="text-cyan-300/60 mb-8">
-              🦀 Sovereign Architect Certified • AVG/GDPR Compliant • Nederlands MKB Focus
+              🦀 Sovereign Architect Certified • AVG/GDPR Compliant • Node.js 24.x • Vercel Ready
             </p>
             <div className="flex justify-center space-x-6">
               <a href="/" className="text-cyan-400 hover:text-cyan-300">
