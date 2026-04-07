@@ -5,9 +5,7 @@ const nextConfig = {
   images: {
     domains: ['github.com', 'vercel.com'],
   },
-  experimental: {
-    serverActions: true,
-  },
+
 }
 
 module.exports = nextConfig
